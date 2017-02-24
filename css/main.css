@@ -1,0 +1,103 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+nav{
+  background:#222;
+}
+.nav-logo{
+  height: 50px;
+}
+.hidden{
+  display: none !important;
+}
+.nav{
+  background: rgba(0,0,0,0);
+  box-shadow: none;
+  transition: all .5s;
+}
+.nav-wrapper a{
+  /*color: black;*/
+}
+.first{
+  background-image: url('../img/night.jpg');
+  background-size: cover;
+  text-align: center;
+}
+.logo{
+  height: 250px;
+  transition: all .3s;
+}
+.coll-name{
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 80px;
+}
+  .brand-name{
+    position: relative;
+    top: -15px;
+  }
+.second,.third{
+  padding-top: 50px;
+}
+.card-style{
+  margin-right: 5px;
+  margin-left: 5px;
+  width: calc(100% - 41px);
+  height: 250px;
+}
+
+
+.map-container {
+  width: 100%;
+  margin: 50px 0 10px;
+}
+.map-container iframe{
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  position: relative; /* IE needs a position other than static */
+}
+.map-container.clicked iframe.clicked{
+  pointer-events: auto;
+}
+.card-style:hover{
+  transform: scale(1.05);
+}
+@media only screen and (max-width: 992px){
+  .logo{
+    margin-top: 50px;
+    height: 150px;
+  }
+  .coll-name{
+    margin-top: 90px; 
+  }
+}
+.images{
+  height: 300px;
+}
+
+.images:nth-child(1){
+  height: 300px;
+}
+.images:nth-child(2){
+  height: 300px;
+}
+.images:nth-child(3){
+  height: 300px;
+}
+.images:nth-child(4){
+  height: 300px;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap !important;
+  justify-content: space-around;
+  vertical-align: middle;
+}
+iframe{
+  width: 100%;
+}
