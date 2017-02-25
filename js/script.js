@@ -9,7 +9,7 @@ $(document).ready(function(){
 		scrollbars: true,
 		standardScrollElements: "",
 		setHeights: true,
-		overflowScroll: true,
+		overflowScroll: false,
 		updateHash: true,
 		touchScroll:true,
 		before:function() {},
@@ -17,18 +17,23 @@ $(document).ready(function(){
 		afterResize:function() {},
 		afterRender:function() {}
 	});
-
+		$(window).resize(function	(){
+			$('.division')
+		})
 	$(window).scroll(function (event) {
     topup = $(document).scrollTop();
-		if($(window).height() < topup)
+		if(($(window).height()-30) < topup)
 		{
 			$('nav').removeClass('nav');
-			$('.brand-logo').removeClass('hidden');
+			$('.nav-name').removeClass('hidden');
+			$('.svg-logo').removeClass('hidden');
 		}
 		else{
 			$('nav').addClass('nav');
-			$('.brand-logo').addClass('hidden');
+			$('.nav-name').addClass('hidden');
+			$('.svg-logo').addClass('hidden');
 		}
 });
 
+    $('#fullpage').fullpage();
 });
