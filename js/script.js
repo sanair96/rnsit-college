@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 	$(window).scroll(function (event) {
     topup = $(document).scrollTop();
-		if($(window).height() < topup)
+		if(($(window).height()-30) < topup)
 		{
 			$('nav').removeClass('nav');
 			$('.brand-logo').removeClass('hidden');
