@@ -101,3 +101,21 @@ nav{
 iframe{
   width: 100%;
 }
+
+#footer
+{
+  width:100%;
+  bottom:0;
+  z-index: 2000;
+  height:20%;
+  background-color:#021B38;
+
+}
+footer{
+    display: hidden;
+}
+#twitter
+{
+  align-items: right;
+  height: 5vh;
+}
