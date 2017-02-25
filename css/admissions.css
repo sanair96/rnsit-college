@@ -1,0 +1,44 @@
+.icon{
+	width: 50px;
+}
+.division second{
+	height: 900px !important;
+}
+h4{
+	color: #009688 ;
+	font-family: 'Bree Serif', serif;
+}
+
+h5{
+	color: black;
+	font-family: 'Bree Serif', serif;
+}
+.navbar-fixed
+{
+	height:0px;
+}
+
+.text-justify {
+	color: #3e2723;
+}
+body{
+	text-align:justify;
+}
+
+h5{
+	color: #3e2723;
+}
+
+i {
+	position: relative;
+	top: 5px;
+}
+@media screen and (max-width: 768px){
+  h4{
+   margin-top:75px;
+  }
+  footer{
+    display: hidden;
+}
+
+}

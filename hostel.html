@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--Let browser know website is optimized for mobile-->
+    <link rel="stylesheet" type="text/css" href="css/physics.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="nav">
+        <div class="nav-wrapper">
+          <img class="svg-logo" src="images/RNSIT.svg" alt="rnsit logo" style="height: 65px; width: 65px;">
+          <a href="#" class="brand-logo" style="color: white; margin-left:0px; ">RNSIT</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a id="home" onclick="navig('home');" href="index.html">Home</a></li>
+            <li><a id="aboutus" onclick="navig('aboutus');" href="#">About US</a></li>
+            <li><a id="contact" onclick="navig('contact');" href="contact.html">Contact</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Departments<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">More<i class="material-icons right">arrow_drop_down</i></a></li>
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+              <li><a>BASIC SCIENCE DEPARTMENTS</a></li>
+              <li class="divider"></li>
+              <li><a id="physics" onclick="navig('physics');" href="physics.html">Physics</a></li>
+              <li><a id="chemistry" onclick="navig('chemistry');" href="chemistry.html">Chemistry</a></li>
+              <li><a id="mathematics" onclick="navig('mathematics');" href="mathematics.html">Mathematics</a></li>
+              <li class="divider"></li>
+              <li><a id="engineeringdept">ENGINEERING DEPARTMENTS</a></li>
+              <li class="divider"></li>
+              <li><a id="cse" onclick="navig('cse');" href="cse.html">CSE</a></li>
+              <li><a id="ece" onclick="navig('ece');" href="ece.html">ECE</a></li>
+              <li><a id="eee" onclick="navig('eee');" href="eee.html">EEE</a></li>
+              <li><a id="ise" onclick="navig('ise');" href="ise.html">ISE</a></li>
+              <li><a id="eie" onclick="navig('eie');" href="eie.html">EIE</a></li>
+              <li><a id="mech" onclick="navig('mech');" href="mech.html">MECH</a></li>
+              <li><a id="civil" onclick="navig('civil');" href="civil.html">CIVIL</a></li>
+              <li class="divider"></li>
+              <li><a id="pg">POST GRADUATION</a></li>
+              <li class="divider"></li>
+              <li><a id="mba" onclick="navig('mba');" href="mba.html">MBA</a></li>
+              <li><a id="mca" onclick="navig('mca');" href="mca.html">MCA</a></li>
+            </ul>
+          </ul>
+          <ul id="dropdown2" class="dropdown-content">
+            <li><a id="cse" onclick="navig('alumni');" href="alumni.html">ALUMNI</a></li>
+            <li><a id="ece" onclick="navig('admissions');" href="admissions.html">ADMISSIONS</a></li>
+            <li><a id="eee" onclick="navig('placements');" href="hr.html">HR</a></li>
+            <li><a id="ise" onclick="navig('library');" href="library.html">LIBRARY</a></li>
+            <li><a id="eie" onclick="navig('hostel');" href="hostel.html">HOSTEL</a></li>
+            <li><a id="mech" onclick="navig('transport');" href="transport.html">TRANSPORT</a></li>
+            <li><a id="mba" onclick="navig('sportsculture');" href="sportsandculture.html">SPORTS & CULTURE</a></li>
+            <li><a id="mca" onclick="navig('facilities');" href="facilities.html">FACILITIES</a></li>
+          </ul>
+          <!--mobile!-->
+          <ul class="side-nav" id="mobile-demo">
+            <li><a id="home" onclick="navig('home');" href="index.html">Home</a></li>
+            <li><a id="aboutus" onclick="navig('aboutus');" href="#">About US</a></li>
+            <li><a id="contact" onclick="navig('contact');" href="contact.html">Contact</a></li>
+            <li><a class="dropNav">Departments<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="innerli">      <div class="innerNav">
+              <a class="nava">BASIC SCIENCE DEPARTMENTS</a>
+              <ul><li class=" nava divider"></li></ul>
+              <a id="physics" class="nava awes" onclick="navig('physics');" href="physics.html">Physics</a>
+              <a id="chemistry" class="nava awes" onclick="navig('chemistry');" href="chemistry.html">Chemistry</a>
+              <a id="mathematics" class="nava awes" onclick="navig('mathematics');" href="mathematics.html">Mathematics</a>
+              <a id="engineeringdept" class="nava ">ENGINEERING DEPARTMENTS</a>
+              <ul><li class=" nava divider"></li></ul>
+              <a id="cse" class="nava" onclick="navig('cse');" href="cse.html">CSE</a>
+              <a id="ece" class="nava" onclick="navig('ece');" href="ece.html">ECE</a>
+              <a id="eee" class="nava" onclick="navig('eee');" href="eee.html">EEE</a>
+              <a id="ise" class="nava" onclick="navig('ise');" href="ise.html">ISE</a>
+              <a id="eie" class="nava" onclick="navig('eie');" href="eie.html">EIE</a>
+              <a id="mech" class="nava" onclick="navig('mech');" href="mech.html">MECH</a>
+              <a id="civil" class="nava" onclick="navig('civil');" href="civil.html">CIVIL</a>
+              <a id="cse" class="nava awes" onclick="navig('cse');" href="cse.html">CSE</a>
+              <a id="ece" class="nava awes" onclick="navig('ece');" href="ece.html">ECE</a>
+              <a id="eee" class="nava awes" onclick="navig('eee');" href="eee.html">EEE</a>
+              <a id="ise" class="nava awes" onclick="navig('ise');" href="ise.html">ISE</a>
+              <a id="eie" class="nava awes" onclick="navig('eie');" href="eie.html">EIE</a>
+              <a id="mech" class="nava awes" onclick="navig('mech');" href="mech.html">MECH</a>
+              <a id="pg" class="nava">POST GRADUATION</a>
+              <ul><li  id=""class=" nava divider"></li></ul>
+              <a id="mba" class="nava awes" onclick="navig('mba');" href="mba.html">MBA</a>
+              <a id="mca" class="nava awes" onclick="navig('mca');" href="mca.html">MCA</a>
+            </div></li>
+            <li><a class="dropNav1">Others<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="innerli">      <div class="innerNav1">
+              <a id="cse" class="nava" onclick="navig('alumini');" href="alumini.html">Alumini</a>
+              <a id="cse" class="nava" onclick="navig('admissions');" href="admissions.html">Admissions</a>
+              <a id="cse" class="nava" onclick="navig('placement');" href="placements.html">Placement</a>
+              <a id="cse" class="nava" onclick="navig('library');" href="library.html">Library</a>
+              <a id="cse" class="nava" onclick="navig('hostel');" href="hostel.html">Hostel</a>
+              <a id="cse" class="nava" onclick="navig('transport');" href="transport.html">Transport</a>
+              <a id="cse" class="nava" onclick="navig('sportsculture');" href="sportsandculture.html">Sports & Culture</a>
+              <a id="cse" class="nava" onclick="navig('facilities');" href="facilities.html">Facilities</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div>
+    <div class="division first">
+      <div class="flex">
+        <img class="logo" src="img/logo.png">
+        <h1 class="coll-name">HOSTEL</h1>
+      </div>
+    </div>
+  </div>
+  <div class="division second" style="height: 900px !important;">
+    
+    <div id="about" class="container">
+      <p><b>The College has presently two Boys and one Girls Hostel. These hostels accommodate around 530 boys and 300 girls boarders. Day to day affairs of hostels are managed by respective Wardens. There is also a Hostel Committee to help in taking policy decisions. Yoga and Meditation classes are held for both boys and girls in the early morning, on alternate days.</p>
+      <p>
+        Accommodation is provided on a sharing basis. Rooms with basic furniture like cot, table and chair are provided. Bed-rolls, linen etc. have to be brought by the students themselves. Strict discipline is maintained in the hostels. Late night entry, leaving hostel without permission are not allowed. Smoking and drinking in hostel premises is totally prohibited. Entry of unauthorised persons is prohibited.
+      </p>
+      <p>
+        Hostel mess serves vegetarian food, the menu prepared by the boarders of the hostel itself. Various sports and Cultural Activities, along with regular academic work, is carried out for the benefit of the boarders.
+      </p>
+      <p>
+        There is a well equipped guest room for parents and guests in the hostel premises. Along with Libray facilities, separate Browsing center is also provided for the boarders to surf the net and avail the internet facility till midnight.
+      </p></b>
+      <br>
+      <p align="center"><b>MESS TIMINGS</b></p><br>
+      <table class="centered bordered">
+        <tbody>
+          <tr>
+            <td>Breakfast</td>
+            <td>7:50 am to 8:30am</td>
+          </tr>
+          <tr>
+            <td>Lunch</td>
+            <td>12:30 noon to 2:00 pm</td>
+          </tr>
+          <tr>
+            <td>Tea</td>
+            <td>4:30 pm to 5:30 pm</td>
+          </tr>
+          <tr>
+            <td>Supper</td>
+            <td>8 pm to 9:00 pm</td>
+          </tr>
+        </tbody>
+      </table><br><br>
+      <p align="center"><b>FACULTY</b></p><br>
+      <table class="centered bordered">
+        <tbody>
+          <tr>
+            <td>Chief Warden Boys Hostel</td>
+            <td>Dr. U. Bhojanna</td>
+          </tr>
+          <tr>
+            <td>Warden Boys Hostel</td>
+            <td>Prof. I G Srikanth</td>
+          </tr>
+          <tr>
+            <td>Residential Warden Boys Hostel</td>
+            <td>Prof B S Nagesh</td>
+          </tr>
+          <tr>
+            <td>Warden Girls Hostel</td>
+            <td>Mrs. Rashmi Deepak</td>
+          </tr>
+          <tr>
+            <td>Residential Warden Boys Hostel</td>
+            <td>Ms. Netravathi</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div id="fot">
+<footer id="footer" class="page-footer">
+<div class="container">
+  <div class="row">
+    <div class="col l4 m4 s12">
+      <h5 class="orange-text">RNSIT</h5>
+      <p class="white-text text-lighten-4">R.N. Shetty Institute of Technology (RNSIT) established in the year 2001, is the brain-child of the Group Chairman, Dr. R.N. Shetty.The Murudeshwar Group of Companies headed by Sri. R. N. Shetty is a leading player in many industries viz construction, manufacturing, hotel, automobile, power & IT services and education. The group has contributed significantly to the field of education.</p>
+      <button name="action" class="btn waves-effect waves-light black lighten-3" type="submit" alt="PayPal - The safer, easier way to pay online!">COMPLIMENT</button>
+    </div>
+    <div class="col l4 m4 s12 push-m1 push-l1">
+      <h5 class="orange-text">HELP</h5>
+      <p class="grey-text text-lighten-4"></p>
+      <ul>
+        <li><a class="white-text text-lighten-3" href="#!">HOME</a></li>
+        <li><a class="white-text text-lighten-3" href="#!">ABOUT</a></li>
+        <li><a class="white-text text-lighten-3" href="#!">DEPT</a></li>
+        <li><a class="white-text text-lighten-3" href="#!">COURSE</a></li>
+      </ul>
+      <a class="btn waves-effect waves-light black lighten-3" href="#!">Email</a>
+    </div>
+    <div class="col l4 m4 s12" style="overflow: hidden;">
+      <h5 class="orange-text">Connect</h5>
+      <a href="https://www.facebook.com/pages/RNS-Institute-of-Technology/143512852331957"><image class="icon" src="img/facebook.svg" alt="fb"></image></a>
+      <a href="instagram/rnsit"><image class="icon" src="img/instagram.svg" alt="insta"></image></a>
+      <a href="twitter/rnsit"><image class="icon" src="img/twitter.svg" alt="twitter"></image></a>
+      <a href="mailto:principal@rnsit.ac.in"><image class="icon" src="img/gmail.svg" alt="gmail"></image></a>
+    </div>
+  </div>
+</div>
+<div class="footer-copyright">
+  <div class="container">
+    <p style="text-align:center"><b>Handcrafted by Dept of CSE</b></p>
+  </div>
+</div>
+</footer>
+</div>
+</div>
+<!--Import jQuery before materialize.js-->
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/scrollify.js"></script>
+<script type="text/javascript" src = "js/script.js"></script>
+</html>
