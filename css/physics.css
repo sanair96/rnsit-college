@@ -4,3 +4,14 @@
 .division second{
 	height: 900px !important;
 }
+.navbar-fixed
+{
+	height:0px;
+}
+@media screen and (max-width: 768px){
+  h4{
+   margin-top:75px;
+  }
+  footer{
+    display: hidden;
+}
